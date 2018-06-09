@@ -11,14 +11,16 @@ button{
     margin: 10px;
 }
 
-/* .main {
+ .main {
     min-height: 100%;
     height: 100%;
 }
 
 .sidebar{
-   height: 100%;
-} */
+   height: 95vh;
+   overflow: scroll;
+}
+
 
 .logo {
     width: 100%;
@@ -31,4 +33,30 @@ button{
 
 .sidebar {
     min-height: 100%
+}
+
+
+.cardRating {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    padding: 24px;
+}
+
+.overflow {
+    overflow: scroll;
+}
+
+.pad10 {
+    padding: 10px;
+}
+
+.mar10 {
+    margin: 10px;
+}
+
+.buttonStretch {
+    min-width: 100px;
 }
