@@ -22,13 +22,13 @@
 
 
     <!-- Page Layout here -->
-    <div class="row main">
-        <div class="col m12 l2 grey darken-2 sidebar">
+    <div class="row main greydarken-2">
+        <div class="col m12 l2 grey darken-2 sidebar sbBorder">
             
             <div class="row grey darken-2">
-                <form class="col s11" id="form">
+                <form class="col s12" id="form">
                     <div class="row">
-                        <div class="input-field col s12">
+                        <div class="input-field col s11">
                             <input id="newTopic" type="text" class="validate white-text">
                             <label id ="topicLabel" class="white-text" for="newTopic">New Topic</label>
                             <button class="waves-effect grey lighten-3 black-text btn" id="submit" type="submit">
@@ -38,6 +38,7 @@
                         </div>
                     </div>
                 </form>
+               
             </div>
             
             <!-- <div class="divider"></div> -->
@@ -51,7 +52,7 @@
 
 
         <!-- empty state -->
-        <div id="emptyState" class="col m12 l10 sidebar grey darken-2 centerCust">
+        <div id="emptyState" class="col m12 l10 sidebar grey darken-2 centerCust killFloat">
             <div class="center-align">
                 <i class="material-icons large">laptop_windows</i>
                 <div class="flow-text">Click a button on the left to view the results</div>
@@ -85,9 +86,17 @@
 
     <!-- footer -->
     <footer class="page-footer grey darken-3">
+        <div class="switch">
+            <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+            </label>
+        </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2018 
+                © 2018
                 <a class="grey-text text-lighten-4 right" target="_blank" href="https://www.tylerbisbee.com">Check out my Portfolio</a>
             </div>
         </div>

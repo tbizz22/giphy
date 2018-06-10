@@ -37,8 +37,12 @@ button{
 
 .sidebar {
     min-height: 100%;
+}
+
+.sbBorder {
     border-right: #555 2px solid;
 }
+
 
 
 .cardRating {
@@ -91,7 +95,7 @@ button{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #616161; 
 }
  
 /* Handle */
@@ -108,4 +112,8 @@ button{
    display:flex;
    justify-content:center;
    align-items:center;
+}
+
+.killFloat {
+    float: none;
 }
