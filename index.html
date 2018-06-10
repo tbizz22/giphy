@@ -21,385 +21,57 @@
 
     <!-- Page Layout here -->
     <div class="row main">
-        <div class="col m12 l2 #81d4fa grey darken-2 sidebar">
-            <div class="row grey darken-1">
+        <div class="col m12 l2 grey darken-2 sidebar">
+            
+            <div class="row grey darken-2">
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <i class="material-icons prefix" id="addIcon">add</i>
-                            <input id="icon_prefix" type="text" class="validate white-text">
-                            <label class="white-text" for="icon_prefix">New Topic</label>
+                            <!-- <i class="material-icons prefix" id="addIcon">add</i> -->
+                            <input id="newTopic" type="text" class="validate white-text">
+                            <label class="white-text" for="newTopic">New Topic</label>
+                            <button class="waves-effect grey lighten-3 black-text btn" id="submit">
+                                <i class="material-icons right">add</i>
+                                Add
+                            </button>
                         </div>
                     </div>
                 </form>
             </div>
+            
+            <!-- <div class="divider"></div> -->
             <!-- This is where the buttons go! -->
             <div id="buttonGrid" class="row">
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text buttonStretch">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text buttonStretch">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
-                <div class="col s12 center-align">
-                    <button class="btn waves-effect blue-grey lighten-3 black-text">test</button>
-                </div>
+                
             </div>
         </div>
 
-        <div class="col m12 l10 sidebar  grey darken-1">
+    <!-- entire right viewport -->
+        <div class="col m12 l10 sidebar  grey darken-2">
             <!-- this is the breadcrumb -->
             <div class="row">
-                <div class="flow-text mar10 white-text">Showing Results for $Search_Term</div>
-                <div class="divider"></div>
+                <div class="flow-text mar10 white-text right">Showing Results for               <span id="searchTerm"></span>
+                </div>
             </div>
             <!-- Main Image Grid -->
             <div id="imageGrid" class="section">
-                
-                <div class="col s12 m6 l3">
-                    <div class="card">
-                        <div class="card-image">
+                <!-- correctly formatted grid sample -->
+                <!-- <div class="col s12 m6 l3">
+                    <div class="card cardContainer">
+                        <div class="card-image cardImg img-responsive">
                             <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
                             <span class="card-title">Card Title</span>
                             <span class="cardRating">Rating: R</span>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media0.giphy.com/media/feqkVgjJpYtjy/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="col s12 m6 l3">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://media2.giphy.com/media/FiGiRei2ICzzG/200.gif">
-                                <span class="card-title">Card Title</span>
-                                <span class="cardRating">Rating: R</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                </div> -->       
+                             
             </div>
         </div>
     </div>
 
     <!-- footer -->
-    <footer class="page-footer grey darken-2">
+    <footer class="page-footer grey darken-3">
         <div class="footer-copyright">
             <div class="container">
                 © 2018 
