@@ -104,3 +104,8 @@ button{
     background: #555; 
 }
 
+.centerCust {
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}

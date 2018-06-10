@@ -83,6 +83,8 @@ function addTopic() {
 
 
 
+// user clicks a button 
+
 
 $(document).on("click", ".topicButton", function (event) {
     event.preventDefault();
@@ -92,6 +94,7 @@ $(document).on("click", ".topicButton", function (event) {
     console.log(queryURL);
     getResults(queryURL);
     updateBreadCrumb(queryTerm);
+    hideEmpty();
 })
 
 
@@ -178,3 +181,8 @@ function clearInput() {
 }
 
 
+// hide empty state grid
+function hideEmpty() {
+    $("#emptyState").addClass("hide");
+    $("#rightViewport").removeClass("hide");
+}

@@ -17,7 +17,9 @@
 </head>
 
 <body>
-    <!-- Navbar goes here -->
+    
+
+
 
     <!-- Page Layout here -->
     <div class="row main">
@@ -46,10 +48,22 @@
         </div>
 
     <!-- entire right viewport -->
-        <div class="col m12 l10 sidebar  grey darken-2">
+
+
+        <!-- empty state -->
+        <div id="emptyState" class="col m12 l10 sidebar grey darken-2 centerCust">
+            <div class="center-align">
+                <i class="material-icons large">laptop_windows</i>
+                <div class="flow-text">Click a button on the left to view the results</div>
+
+            </div>
+        </div>
+
+    <!-- right viewport content -->
+        <div id="rightViewport" class="col m12 l10 sidebar  grey darken-2 hide">
             <!-- this is the breadcrumb -->
             <div class="row">
-                <div class="flow-text mar10 white-text right">Showing Results for               <span id="searchTerm"></span>
+                <div class="flow-text mar10 white-text right">Showing Results for: "<span id="searchTerm"></span>"
                 </div>
             </div>
             <!-- Main Image Grid -->
