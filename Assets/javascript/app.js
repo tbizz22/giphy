@@ -17,7 +17,7 @@ function renderTopic() {
         var d = $("<div>");
         d.addClass("col s12 center-align");
         var b = $("<button>");
-        b.addClass("btn waves-effect blue-grey lighten-3 black-text buttonStretch hoverable");
+        b.addClass("btn waves-effect blue-grey lighten-3 black-text buttonStretch hoverable topicButton");
         b.attr("data-name", topic[i]);
         b.text(topic[i]);
         // add the button to the div 
@@ -28,11 +28,28 @@ function renderTopic() {
 }
 
 
+// add topic button
+
 $("#submit").on("click", function (event) {
     event.preventDefault();
     buttonTriggered = $("#newTopic").val().trim();
-    console.log(buttonTriggered)
-    addTopic();    
+    
+    if (buttonTriggered.length < 3) {
+
+        // var d = $("#input-field");
+        var msg = "Please enter at least 3 characters"
+        alert(msg);
+        // var s = $("<span>")
+        // s.text = msg
+        // s.attr("class","helper-text")
+
+        // s.append(d)      
+
+    } else {
+        console.log(buttonTriggered)
+        addTopic();
+        clearInput();
+    }
 })
 
 
@@ -44,7 +61,7 @@ function addTopic() {
 
 
 
-$(document).on("click", "button", function (event) {
+$(document).on("click", ".topicButton", function (event) {
     event.preventDefault();
     var queryTerm = $(this).attr("data-name");
     var queryString = URL + "?q=" + queryTerm + "&api_key=" + Key + "&limit=" + limit;
@@ -114,3 +131,27 @@ function getResults(qurl) {
 function updateBreadCrumb (qt) {
     $("#searchTerm").text(qt);
 }
+
+
+
+
+// Animate gif on click
+$(document).on("click", "img", function (event) {
+    var state = $(this).attr("data-state");
+
+    if (state === "still") {
+        $(this).attr("src", $(this).attr("data-gif"));
+        $(this).attr("data-state", "animate");
+    } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+    }
+});
+
+
+function clearInput() {
+    $('#newTopic').val('');
+    $("#topicLabel").removeClass("active");
+}
+
+

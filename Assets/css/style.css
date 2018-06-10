@@ -6,6 +6,9 @@ footer{
     height: 60px;
 }
 
+img {
+    cursor: auto;
+}
 
 button{
     padding: 10px;
@@ -100,3 +103,4 @@ button{
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+
