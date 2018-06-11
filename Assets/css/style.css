@@ -117,3 +117,6 @@ button{
 .killFloat {
     float: none;
 }
+.page-footer {
+    padding-top: 10px;
+}

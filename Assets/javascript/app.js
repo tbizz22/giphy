@@ -186,3 +186,9 @@ function hideEmpty() {
     $("#emptyState").addClass("hide");
     $("#rightViewport").removeClass("hide");
 }
+
+// $( "#pc" ).toggle(function() {
+//     alert( "First handler for .toggle() called." );
+//   }, function() {
+//     alert( "Second handler for .toggle() called." );
+//   });
