@@ -119,7 +119,7 @@ function getResults(qurl) {
 
             // begin making divs
             var colDiv = $("<div>");
-            colDiv.addClass("col s12 m6 l3");
+            colDiv.addClass("col s12 m6 l4");
 
             var cardContainerDiv = $("<div>");
             cardContainerDiv.addClass("card cardContainer");
@@ -187,8 +187,21 @@ function hideEmpty() {
     $("#rightViewport").removeClass("hide");
 }
 
-// $( "#pc" ).toggle(function() {
-//     alert( "First handler for .toggle() called." );
-//   }, function() {
-//     alert( "Second handler for .toggle() called." );
-//   });
+
+
+// (function($) {
+//     var $window = $(window),
+//         $html = $('#buttonGrid');
+
+//     function resize() {
+//         if ($window.width() <= 600) {
+//             return $html.addClass('main');
+//         }
+
+//         $html.removeClass('main');
+//     }
+    
+//     $window
+//         .resize(resize)
+//         .trigger('resize');
+// })(jQuery);
