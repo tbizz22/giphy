@@ -89,7 +89,11 @@ function addTopic() {
 $(document).on("click", ".topicButton", function (event) {
     event.preventDefault();
     var queryTerm = $(this).attr("data-name");
-    var queryString = URL + "?q=" + queryTerm + "&api_key=" + Key + "&limit=" + limit;
+    var rating = "pg";
+    if (!$("#pcSwitch").is(":checked")) {
+        rating = "r"
+    }
+    var queryString = `${URL}?q=${queryTerm}&api_key=${Key}&limit=${limit}&rating=${rating}`
     var queryURL = encodeURI(queryString);
     console.log(queryURL);
     getResults(queryURL);
@@ -190,19 +194,3 @@ function hideEmpty() {
 
 
 
-// (function($) {
-//     var $window = $(window),
-//         $html = $('#buttonGrid');
-
-//     function resize() {
-//         if ($window.width() <= 600) {
-//             return $html.addClass('main');
-//         }
-
-//         $html.removeClass('main');
-//     }
-    
-//     $window
-//         .resize(resize)
-//         .trigger('resize');
-// })(jQuery);
