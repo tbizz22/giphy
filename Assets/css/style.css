@@ -76,14 +76,18 @@ button{
 
 
 .cardImg {
-    max-width: 300px;
+    max-width: 400px;
     max-height: 400px;
+
 }
 
 
 .cardContainer {
-    max-width: 300px;
+    max-width: 400px;
     max-height: 400px;
+    /* min-height: 400px;
+    min-width: 400px; */
+    background-color: #616161;
 }
 
 

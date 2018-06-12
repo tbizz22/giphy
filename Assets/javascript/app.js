@@ -132,6 +132,7 @@ function getResults(qurl) {
             image.attr("data-gif", gifURL);
             image.attr("src", stillURL);
             image.attr("data-state", "still");
+            image.addClass("img-responsive")
 
             var ratingSpan = $("<span>");
             ratingSpan.text("Rating: " + rating);
