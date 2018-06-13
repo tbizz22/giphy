@@ -3,7 +3,6 @@ var URL = "https://api.giphy.com/v1/gifs/search";
 var Key = "zvX6mx15FdjrqCj5yVJQZx8Oox55oEca";
 var buttonTriggered = "";
 var limit = 20;
-var parentalControl = 1;
 var topic = [];
 
 // getTopic();
